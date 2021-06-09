@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Cycling Tours</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cyclestyles.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Fall 2019 Reviews</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html"> Reviews</a></li>
+			<li><a href="seminars.html"> Seminars</a></li>
+		</ul>
+	</nav>
+	</header>
+	<div id = "Reviewform">
+		<form method ="POST" name="mainform" id="mainform"
+		action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+		</form>
+		<fieldset>
+		<fieldset>
+				<legend>About You (optional)</legend>
+					<label> I usually prefer to take trips this time of year (select all that apply): </label>
+				<div>
+					<select name = "season" size="4" multiple>
+						<option value ="Winter">Winter</option>
+						<option value ="Winter">Spring</option>
+						<option value ="Winter">Summer</option>
+						<option value ="Winter">Fall</option>
+					</select>
+				</div>
+			
+				<br>
+				<label id="firstname">First Name:</label>
+				<input type = "text" name = "firstname" maxlength="20" size="20"><br>
+				
+				<label id="lastname">Last Name: </label>
+				<input type = "text" name = "lastname" maxlength="20" size="20"><br>
+				
+				<label id="Phonenumber">Phone Number: </label>
+				<input type = "text" name = "Phone Number" placeholder="123-456-7890" maxlength="20" size="20"><br>
+				
+				<label id="email">Email: </label>
+				<input type = "text" name = "Email" placeholder="name@example.com" maxlength="20" size="20"><br>
+			
+				</fieldset>
+				
+				
+			
+			<fieldset>
+			
+				<legend>I would be intersted in these trips: (check all that apply)</legend>
+
+			
+				<select name="trails">
+					<option value="Alberta Rural">Alberta Rural</option>
+					<option value="BC">B.C.Coast</option>
+					<option value="Ontario Lake Superior" >OntarioLake Superior</option>
+					<option value="PEI" >PEI</option>
+					<option value="Nova Scotia Cabot Trail" selected>Nova Scotia Cabot Trail</option>
+				</select>
+				<select name="length">
+					<option value="5" selected>5 Days</option>
+					<option value="5">7 Days</option>
+					<option value="5">10 Days</option>
+					<option value="5">14 Days</option>
+				</select>
+
+				<div id ="rating">
+				
+				<label id="rates"> Your Rating: </label>
+				<br>
+				<input type="radio" name="rating" value="4" checked><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/>
+				<br>
+				<input type="radio" name="rating" value="3"><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/>
+				<br>
+				<input type="radio" name="rating" value="2"><img src="lab5-images/wheel_sm.jpg" alt="wheel"/><img src="lab5-images/wheel_sm.jpg" alt="wheel"/>
+				<br>
+				<input type="radio" name="rating" value="1"><img src="lab5-images/wheel_sm.jpg" alt="wheel"/>
+				<br>
+				<br>
+			</div>
+			
+			<div>
+				<input type = "checkbox" name="trip" class="trip" value="coast"> Sea or Lake Coast 
+				</div>
+				
+				<div>
+				<input type = "checkbox" name="trip" class="trip" value="coastal"> Rural 
+				</div>
+				
+				<div>
+				<input type = "checkbox" name="trip" class="trip" value="Mountains"> Mountains 
+				</div>
+				
+				<div>
+				<input type="checkbox" name="trip" class="trip" value="other" checked="checked">Other (please specify) <input type="text" name="trip" class="trip">
+				</div>
+			
+			<div>
+				<label id="comments">Comments: </label><br>
+				<textarea name="comments" rows="7" cols="65">
+				</textarea>
+
+				</div>	
+			</fieldset>
+		
+			<input type="submit" value="SEND REVIEW" class = "formbutton" > 
+					<input type="reset" value="CANCEL" class = "formbutton" >	
+					<input type="hidden" name="fomrname" value="Baraa Dukhan Trip Review">
+				
+				
+					
+					
+				
+			</fieldset>
+			</div>
+
+
+
+
+</body>
+
+
+</html>

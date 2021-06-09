@@ -1,0 +1,70 @@
+/* MAIN CSS*/
+
+body{
+	font-family: arial, sans-serif;
+}
+
+header{
+	background: lightblue;
+	text-align: center;
+	width: 100%;
+	
+}
+
+nav{
+	background: #4681A4;
+	padding-top:7px;
+	padding-bottom:5px;
+	top:0;
+}
+
+nav ul li{
+	border: 1px solid black;
+	color: white;
+	font-size: 13px;
+	background: lightblue;
+	list-style: none;
+	padding: 10px;
+	display: inline;
+	
+}
+
+fieldset{ background: #4681A4;
+			border: 2px solid white;
+			margin-bottom: 10px;
+			font-size: 13px;
+			font-weight: bold;
+	}
+	
+nav ul li a{
+	color: white;
+}
+	
+	legend{
+		color:white;
+	}
+	
+	form{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	#firstname{
+			margin-left: 10px;
+		}
+		
+	#lastname{
+			margin-left: 3px;
+		}
+		
+	#Phonenumber{
+			margin-left: 10px;
+		}
+		
+	#email{
+			margin-left: 31px;
+		}
+		
+	.formbutton{
+			font-weight: bold;
+			background: #ffffe6;
+		}
